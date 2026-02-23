@@ -2,8 +2,14 @@
 # Do NOT edit it manually — your changes will be overwritten on the next push to master.
 # See .github/workflows/update-metadata.yml for the generation trigger.
 
-generated_at: '2026-02-19T21:35:13Z'
+generated_at: '2026-02-23T21:19:42Z'
 scenarios:
+- path: ansibletower/deploy_sat_with_cap.yaml
+  name: deploy_sat_with_cap
+  categories:
+  - ansibletower
+  description: Deploy a Satellite and Capsule, then configure the Capsule to the
+    Satellite
 - path: ansibletower/sync_checkin_all.yaml
   name: sync_checkin_all
   categories:
