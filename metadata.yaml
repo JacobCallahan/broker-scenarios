@@ -2,7 +2,7 @@
 # Do NOT edit it manually — your changes will be overwritten on the next push to master.
 # See .github/workflows/update-metadata.yml for the generation trigger.
 
-generated_at: '2026-02-23T21:19:42Z'
+generated_at: '2026-03-13T00:59:34Z'
 scenarios:
 - path: ansibletower/deploy_sat_with_cap.yaml
   name: deploy_sat_with_cap
@@ -15,6 +15,21 @@ scenarios:
   categories:
   - ansibletower
   description: Sync inventory from AnsibleTower and checkin all hosts.
+- path: ansibletower/testing/comprehensive_ansibletower_test.yaml
+  name: comprehensive_ansibletower_test
+  categories:
+  - ansibletower
+  - testing
+  description: Comprehensive test of AnsibleTower provider functionality with 
+    multiple RHEL hosts, workflow queries, SSH commands, lease extension, and 
+    inventory operations.
+- path: ansibletower/testing/smoke_ansibletower_test.yaml
+  name: smoke_ansibletower_test
+  categories:
+  - ansibletower
+  - testing
+  description: Smoke test for the AnsibleTower provider covering provider_info, 
+    checkout, SSH reachability, lease extension, inventory sync, and checkin.
 - path: container/testing/comprehensive_container_test.yaml
   name: comprehensive_container_test
   categories:
