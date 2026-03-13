@@ -2,7 +2,7 @@
 # Do NOT edit it manually — your changes will be overwritten on the next push to master.
 # See .github/workflows/update-metadata.yml for the generation trigger.
 
-generated_at: '2026-03-13T00:59:34Z'
+generated_at: '2026-03-13T01:00:12Z'
 scenarios:
 - path: ansibletower/deploy_sat_with_cap.yaml
   name: deploy_sat_with_cap
@@ -10,6 +10,13 @@ scenarios:
   - ansibletower
   description: Deploy a Satellite and Capsule, then configure the Capsule to the
     Satellite
+- path: ansibletower/maintenance/reboot_locked_vm.yaml
+  name: reboot_locked_vm
+  categories:
+  - ansibletower
+  - maintenance
+  description: Unlock a VM, reboot it, then re-lock it using AnsibleTower 
+    workflows.
 - path: ansibletower/sync_checkin_all.yaml
   name: sync_checkin_all
   categories:
